@@ -1,0 +1,405 @@
+access_type class class_name
+
+public static void main(String[] args)
+{}
+
+System.out,print();
+System.out.println();
+
+Escape Sequence:
+\t,\r\,\n,\\,\'
+
+comment 
+single line comment= //
+milti line comment = /*		*/
+
+steps which are taken when a java file is run.
+i)compile
+ii)class
+iii)load
+iv)read/cheack
+v)output
+
+variables and datatypes
+
+syntax: 
+datatype variable_name = value ;
+
+Datatypes
+
+to use floating value we have to use f after the number
+
+format specifier ---> printf
+
+shortcut of ==> public static void main(String[] args){} ---> "psvm" and press	tab
+
+
+user input 
+import java.util.Scanner
+
+Scanner scanner_name = new Scanner (System.in);			for string we use --> variable.next()=> input without spaces/terminates at a space	
+variable.nextLine();-->input with spaces.
+
+
+typecasting
+
+(Casting_type)value;
+
+
+
+unaary operator
+
+
+arithmetic  operator
+assignment operator
+relational operator
+control statement-> if else if else ladder(selectioin)
+logical operator	and, or, not
+
+switch case
+
+conditional operator/Ternary opetator
+
+bitwise operator
+
+math class --> built in class--> Math.function();	
+
+Control -->(looping)
+for loop
+while loop
+do while loop
+
+
+break continue
+ array--> declaration--> data_type[] array_name;
+			array_name=new datatype[size];
+or, single line command = data_type[] array name = new data_type[ size ];
+
+array size = array_name.lenght;
+
+
+
+
+for each loop--> for(data_type variable_name : Array_name)
+{
+system.out.print(variable_name);
+} 
+
+
+array sroting->Array.sort(array_name)
+
+
+
+
+ArraryList --> import java.util.ArrayList;
+//similar to vector(STL) in c++
+
+creating===> ArraryList<Datatype(Integer/Float/Double)> variable_name = new ArrayList<datatype>();
+funtions :
+
+varbale_name.add(value); 
+varbale_name.add(index , value); 
+variable_name.remove(Index);
+varbale_name.removeAll(); 
+
+
+variable_name.clear()-->deletes all item .
+variable_name.isEmpty()-->Checks array emty or not ! returns Boolean val
+variable_name.contails(value)-->checks specific value in the array . returns Boolean value
+variable_name.set(index,value)->replace current index value !
+variable_name.get(index)-->get index value.
+variable_name.addALL(other arrayList)-->copy all value from one to another;
+variable_name.equals(other arrayList)
+
+printing :
+
+System.out.print(variable_name);
+or
+for each loop
+
+ArrayList Sorting==> Collections.sort(Arraylist_name)
+ reverse ==> Collections.sort(Arraylist_name  ,  cllectioins.reverseOrder())
+
+String-->
+
+
+String variable ="data";
+or 
+String variable = new String("Data");
+
+Functions of String:
+
+variable.length();
+
+variable.equals(other variable)
+variable.equalsIgnoreCase(other variable)
+
+variable.contains(data);
+variable.isEmpty();
+
+variable.concat(other variable)
+variable.toUpperCase()
+variable.toLowerCase
+
+variable.startswith("Data")
+variable.endswith("data")
+
+variable.codePointAt(index)-->returns the ASCII value of the word
+variable.indexof("data")->returns index number of the first data
+
+variable.lastIndexOf("data")->returns index number of the first data
+variable..replace("value which will be replaced" , "value which will be replaced with")
+
+StirngBuffer-->
+
+StringBuffer a = new StringBuffter("Val");
+
+functions of StringBuffer :
+
+variable.append();
+variable.delete(starting value, ending value);
+variable.reverse();
+variable.setLength();
+
+StirngBuilder-->
+
+StringBuilder a = new StringBuilder("Val");
+
+functions of StringBuffer :
+
+variable.append();
+variable.delete(starting value, ending value);
+variable.reverse();
+variable.setLength();
+
+
+
+
+Wrapper_:
+it is a functionality which can convert the primitive data into object(wrap) and vice versa.
+
+wrapper=>i) wrapping
+	  ii) Autoboxing
+	   iii) Unboxing
+
+
+Autoboxing(pirimitive ---> object):
+
+primitive_datatype variable = value;//primitive variable
+Wrapper_datatype variable = Wrapper_datatype(primitive will be changed in this datatype in wrapper).valueOf(primitive variable);
+
+or,
+
+Wrapper_datatype variable = primitive variable//compiler auto adds -> Wrapper_datatype.valueOf(primitive variable);-->autoboxing
+
+unobxing(object--> Primitive)
+
+Wrapper _dattatype variable = val;
+
+primitive datatype variable = wrapper_variable.pirimitive_datatype.Value();
+or ,
+primitive datatype variable = wrapper_variable
+
+
+date and time
+
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+        Date vairbale = new Date();
+        System.out.println(vairbale);
+        
+        SimpleDateFormat variable= new SimpleDateFormat("dd/MM//YY");
+        String variable= variable_SimpleDateFormat.format(vairbale_Date);
+        System.out.println(variable_string);
+        
+
+
+
+
+Random number java;
+
+import java.util.Random;
+
+Random variable = new Random();
+
+datatype variable = Random_variable.next_datatype(limit ->(starting always 0, ending limit must be given by user));
+
+
+	or.
+
+int x =(int) (Math.random*limit);
+
+
+
+
+
+OOP
+
+class -->
+
+ declaretioin of the object -> Class_name object;//declaration
+				object = new Class_name();
+
+
+or,
+
+Class_name object = new Class_name();  
+
+methods->i)Parameterized 
+	ii)Non parameterized 
+
+Constructor->i)Parameterized 
+	ii)Non parameterized
+
+
+constructor Overloading
+
+
+
+returing value.
+
+
+
+static method:
+
+i)used for memory management;
+ii) does not require any object. It can be directly access through the class
+iii) it can work as a reference for component of object
+
+
+Restrictions:
+i) static method can only be accessed by a static method or variable . A static method can not access a non static method or a non static variable but a non static function or variable ca access static variable or function 
+ii)this, super keyword will not work
+
+
+
+
+
+varibales
+i)local-> Declared in a specific box or scope
+ii)instance-> Decleared in class but not in any onther function.. This varibable cannt be static.
+iii)Static -> Varriables with the keyword static
+        
+   
+Instance variable hiding --> this keyword to solv3e
+
+
+
+functiuon/method overloading
+
+Call by value + Call by reference 
+
+
+
+Variable length Argument-> function(datatype ... variable)-->in here "..." represents the variable length argument. and the variable works as a arrayList
+
+
+
+Recursion
+-->Factorial
+
+
+Encapsulation->
+
+
+setter getter method    
+
+inheritance -> extendes
+				
+inheritance of private variable ==> same as encapsulation we use setter and getter method
+use ->System.out.print(a instanceof b)
+
+
+
+Types of inheritance 
+i)Single
+ii)multi_LEvel
+iii)Hierarchical 
+iV)Multiple --> Java doesn't support multiple inheritance
+
+
+method overriding
+
+overriding vs overloading	
+
+
+super -> helps to gain access to the member functions and variables of parent class
+i)can be used to gain access in parent variable
+ii)It is used to call a method of the parent class from a overridden class
+iii) it can be used to call the constructor of parent class--->c++ constructor initializer->Syntax different-->super(parameter);
+			**call for constructor must be on the first line**
+			
+
+
+
+this keyword---> It is used to maintain and remove ambiguity from ***current class***.
+
+i) used to remove ambiguity between current class local and global variable
+ii) can be used to call constructor of the same class--> similar to super keyword + similar syntax-->in the constructor this()	
+			**call for constructor must be on the first line**
+
+
+
+final keyword--->This works as constant variable . We can not change the value of the final variable
+
+i)final variable
+ii)black final variable --> can only be set using a constructor 
+iii)Static blank final variable->can only be set by using a static block.
+iv) a final variable or function can be inherited and used but can not be overridden 
+v) final class cannot be inherited .
+
+
+
+
+
+Polymorphism
+runtime polymorphism-method overriding 
+compiletime polymorphism -> function overloading, constructor overloading
+
+super class can be used as a reference or child class 
+--> super_class  variable = new child_class();//creating a reference variable from parent class.
+->this will refer to the child class object and its member variable and function ;
+-->in here all type member functions and variables of child class are in the super class  varibable
+
+
+Abstraction
+-->Abstract Class -> abstraction rate =0-100%
+-->Interface-->abstraction rate= only 100%
+
+ 
+conditions :
+i) Abstract Functions must be in abstract class
+//ii) Abstract function must have abstract keyword in front
+iii)Abstract function can not have body.
+iv)Abstract function must be overridden and redefined in the base class
+v)Abstract class can have abstract function and non abstract function
+vi)Abstract Class cannot create any object but can create reference 
+
+syntax for interface class -> public interface class_name;
+
+Interface:-->collection of abstract methods
+
+conditions:
+i)It can only have abstract functions. Non abstract functions are not allowed
+ii) Abstract keyword is not mandatory while creating a abstract function in interface;
+iii) a normal variable becomes static final variable in Interface class
+iv) All abstract functions  must be re defined in base class
+
+***v)By using Interface we can do multiple inheritance --> keyword -> implements
+
+===> when a class inherits a class we use "extends". Again when a interface inherits interface we can use "extends". but when a class inherits a interface or vice versa we use "implements". 
+
+
+Difference Between Class and INterface.
+
+
+Package->different types of package
+
+Access Modifier
+i)Private -> Private methods are only accessible in the same class 
+ii) Public -> can be access from anywhere.
+iii)Protected -> can be used under the same package without any problem . It needs to be inherited to be accessible in other packages
+iv) Default -> They can be only used in the same package not from other package

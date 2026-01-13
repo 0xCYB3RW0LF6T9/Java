@@ -1,0 +1,4 @@
+Why we use StringBuffer , StringBuilder instead of String????
+
+
+Ans: We Use Stringbuffer and StringBuilder because of flexibility . in String we can not directly do operations on the variable . And we also have to store the string in other variables after work. IN short, in string we work with the copy of the string and in in stringBuffer and StringBuilder we usually work with the string it self....and we also dont need any extra variables to store the values.

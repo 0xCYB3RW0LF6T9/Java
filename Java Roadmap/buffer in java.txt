@@ -1,0 +1,24 @@
+🔹 What is a “buffer” in Java input?
+
+When you type input using the keyboard, Java does not read it character by character immediately.
+
+🔹 When does the buffer problem occur?
+
+The buffer issue happens when you mix numeric input and string input.
+
+🔹 When exactly does this problem occur?
+
+✔ When you use:
+
+nextInt()
+
+nextDouble()
+
+nextFloat()
+
+nextLong()
+
+
+🔹 How to solve the buffer problem
+
+Add an extra nextLine() after numeric input.
